@@ -12,9 +12,9 @@ Requisitos Técnicos:
 
 Recursos Necessários:
 
-Dataset histórico de vendas/estoque (disponível na pasta datasets/)
-Navegador web atualizado
-Conexão estável com a internet
+- Dataset histórico de vendas/estoque (disponível na pasta datasets/)
+- Navegador web atualizado
+- Conexão estável com a internet
 
 ## 🎯 Objetivos Deste Desafio de Projeto (Lab)
 
