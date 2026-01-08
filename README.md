@@ -16,7 +16,7 @@ Recursos Necessários:
 - Navegador web atualizado
 - Conexão estável com a internet
 
-## 🎯 Objetivos Deste Desafio de Projeto (Lab)
+## 🎯 Objetivos Deste Desafio de Projeto
 
 Desenvolver um modelo de Machine Learning capaz de prever demandas futuras de estoque, permitindo:
 
