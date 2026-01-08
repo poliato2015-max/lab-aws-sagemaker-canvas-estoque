@@ -26,13 +26,15 @@ Desenvolver um modelo de Machine Learning capaz de prever demandas futuras de es
   
 ## 📚 Fundamentação Teórica
 
-Problema de Negócio: A gestão inadequada de estoque representa um dos principais desafios operacionais para empresas, resultando em:
+### 1. Problema de Negócio
+A gestão inadequada de estoque representa um dos principais desafios operacionais para empresas, resultando em:
 
 - Custos de armazenamento elevados quando há excesso de produtos
 - Perda de vendas e insatisfação do cliente em casos de ruptura de estoque
 - Obsolescência de produtos devido a previsões imprecisas
 
-Abordagem de Machine Learning: Utilizamos algoritmos de séries temporais e regressão para modelar padrões históricos de vendas e prever demandas futuras. O SageMaker Canvas aplica automaticamente técnicas como:
+### 2. Abordagem de Machime Learning
+Utilizamos algoritmos de séries temporais e regressão para modelar padrões históricos de vendas e prever demandas futuras. O SageMaker Canvas aplica automaticamente técnicas como:
 
 - AutoML: Seleção automática do melhor algoritmo
 - Feature Engineering: Criação de variáveis preditoras relevantes
