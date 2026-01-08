@@ -4,7 +4,11 @@ Este projeto implementa um sistema de previsão de estoque baseado em Machine Le
 
 ## 📋 Pré-requisitos
 
-Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda para criar sua conta, confira nosso repositório [AWS Cloud Quickstart](https://github.com/digitalinnovationone/aws-cloud-quickstart).
+Requisitos Técnicos
+
+- Conta ativa na AWS com permissões para SageMaker
+- Acesso ao Amazon SageMaker Canvas
+- Conhecimento básico de conceitos de Machine Learning
 
 
 ## 🎯 Objetivos Deste Desafio de Projeto (Lab)
