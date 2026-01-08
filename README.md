@@ -18,12 +18,25 @@ Recursos Necessários:
 
 ## 🎯 Objetivos Deste Desafio de Projeto (Lab)
 
-![image](https://github.com/digitalinnovationone/lab-aws-sagemaker-canvas-estoque/assets/730492/72f5c21f-5562-491e-aa42-2885a3184650)
+Desenvolver um modelo de Machine Learning capaz de prever demandas futuras de estoque, permitindo:
 
-- Dê um fork neste projeto e reescreva este `README.md`. Sinta-se à vontade para detalhar todo o processo de criação do seu Modelo de ML para uma "Previsão de Estoque Inteligente".
-- Para isso, siga o [passo a passo] descrito a seguir e evolua as suas habilidades em ML no-code com o Amazon SageMaker Canvas.
-- Ao concluir, envie a URL do seu repositório com a solução na plataforma da DIO.
+- Otimização de inventário: Redução de custos com excesso ou falta de produtos
+- Previsão de demanda: Antecipação de necessidades de reposição
+- Tomada de decisão baseada em dados: Insights quantitativos para estratégias de supply chain
+  
+## 📚 Fundamentação Teórica
 
+Problema de Negócio: A gestão inadequada de estoque representa um dos principais desafios operacionais para empresas, resultando em:
+
+- Custos de armazenamento elevados quando há excesso de produtos
+- Perda de vendas e insatisfação do cliente em casos de ruptura de estoque
+- Obsolescência de produtos devido a previsões imprecisas
+
+Abordagem de Machine Learning: Utilizamos algoritmos de séries temporais e regressão para modelar padrões históricos de vendas e prever demandas futuras. O SageMaker Canvas aplica automaticamente técnicas como:
+
+- AutoML: Seleção automática do melhor algoritmo
+- Feature Engineering: Criação de variáveis preditoras relevantes
+- Validação cruzada: Avaliação robusta do modelo
 
 ## 🚀 Passo a Passo
 
