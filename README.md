@@ -16,6 +16,8 @@ Recursos Necessários:
 - Navegador web atualizado
 - Conexão estável com a internet
 
+  Nota : Para criação de conta AWS, consulte o guia AWS Cloud AWS Cloud Quickstart.
+
 ## 🎯 Objetivos Deste Desafio de Projeto
 
 Desenvolver um modelo de Machine Learning capaz de prever demandas futuras de estoque, permitindo:
