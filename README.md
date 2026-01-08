@@ -4,12 +4,17 @@ Este projeto implementa um sistema de previsão de estoque baseado em Machine Le
 
 ## 📋 Pré-requisitos
 
-Requisitos Técnicos
+Requisitos Técnicos:
 
 - Conta ativa na AWS com permissões para SageMaker
 - Acesso ao Amazon SageMaker Canvas
 - Conhecimento básico de conceitos de Machine Learning
 
+Recursos Necessários:
+
+Dataset histórico de vendas/estoque (disponível na pasta datasets/)
+Navegador web atualizado
+Conexão estável com a internet
 
 ## 🎯 Objetivos Deste Desafio de Projeto (Lab)
 
