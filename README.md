@@ -16,7 +16,7 @@ Recursos Necessários:
 - Navegador web atualizado
 - Conexão estável com a internet
 
-  Nota : Para criação de conta AWS, consulte o guia AWS Cloud AWS Cloud Quickstart.
+Nota : Para criação de conta AWS, consulte o guia completo realizado pela equipe DIO AWS (https://github.com/digitalinnovationone/aws-cloud-quickstart).
 
 ## 🎯 Objetivos Deste Desafio de Projeto
 
