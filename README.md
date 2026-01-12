@@ -53,28 +53,28 @@ Variáveis:
   - Demanda: Quantidade vendida, preço, unidades em estoque
   - Contextuais: Sazonalidade, promoções, feriados
     
-Critérios básicos:
-  - Qualidade dos dados (baixa taxa de valores ausentes)
-  - Granularidade temporal adequada (diária, semanal ou mensal)
-  - Período histórico: 5 anos
+  Critérios básicos:
+    - Qualidade dos dados (baixa taxa de valores ausentes)
+    - Granularidade temporal adequada (diária, semanal ou mensal)
+    - Período histórico: 5 anos
     
-Geração dos dados:
-  - Para a geração dos dados foi Utilizado uma ferramenta de Inteligência Artificial Generativa: Claude Sonnet 4.5
-  - Características do dataset gerado:
-    - 520.600 registros de vendas reais
-    - 60 produtos diferentes de moda (camisetas, calças, vestidos, jaquetas, etc.)
-    - Período: 01/01/2021 a 31/12/2025
-    - Aproximadamente 50 produtos vendidos por dia com variação natural
-    - Estoque realista que decresce com as vendas e é reposto quando zerado
-    - Flags de promoção (aproximadamente 25% dos dias que têm promoções)
-    - Formato CSV pronto para uso no SageMaker Canvas
-    - Colunas existentes no arquivo gerado:
-      - PRODUTO (ID numérico)
-      - DESCRICAO_PRODUTO (nome do produto)
-      - DATA_VENDA (formato YYYY-MM-DD)
-      - PREÇO_DA_VENDA
-      - FLAG_PROMOCAO (0 ou 1)
-      - QUANTIDADE_ESTOQUE (estoque após a venda)
+  Geração dos dados:
+    - Para a geração dos dados foi Utilizado uma ferramenta de Inteligência Artificial Generativa: Claude Sonnet 4.5
+    - Características do dataset gerado:
+      - 520.600 registros de vendas reais
+      - 60 produtos diferentes de moda (camisetas, calças, vestidos, jaquetas, etc.)
+      - Período: 01/01/2021 a 31/12/2025
+      - Aproximadamente 50 produtos vendidos por dia com variação natural
+      - Estoque realista que decresce com as vendas e é reposto quando zerado
+      - Flags de promoção (aproximadamente 25% dos dias que têm promoções)
+      - Formato CSV pronto para uso no SageMaker Canvas
+      - Colunas existentes no arquivo gerado:
+        - PRODUTO (ID numérico)
+        - DESCRICAO_PRODUTO (nome do produto)
+        - DATA_VENDA (formato YYYY-MM-DD)
+        - PREÇO_DA_VENDA
+        - FLAG_PROMOCAO (0 ou 1)
+        - QUANTIDADE_ESTOQUE (estoque após a venda)
 
 - 1.2 Faça o upload do dataset criado no SageMaker Canvas.
 
