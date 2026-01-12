@@ -76,7 +76,6 @@ Variáveis:
         - FLAG_PROMOCAO (0 ou 1)
         - QUANTIDADE_ESTOQUE (estoque após a venda)
       - Imagem quanto a geração do dataset na ferramenta Claude:
-
       ![image](https://github.com/poliato2015-max/imagens/blob/main/DATASET_HISTORICO_ESTOQUE_CLAUDE_IA.jpg)
 
 
