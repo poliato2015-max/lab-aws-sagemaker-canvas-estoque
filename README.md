@@ -53,8 +53,8 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
   - Produto: SKU, nome do produto = apenas roupas
   - Demanda: Quantidade vendida, preço, unidades em estoque
   - Contextuais: Sazonalidade, promoções, feriados
-    
- Critérios básicos:
+  
+  Critérios básicos:
   - Qualidade dos dados (baixa ou nenhuma taxa de valores ausentes)
   - Granularidade temporal adequada (diária, semanal ou mensal)
   - Período histórico: 5 anos
