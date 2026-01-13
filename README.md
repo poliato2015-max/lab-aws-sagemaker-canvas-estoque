@@ -55,9 +55,9 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
   - Contextuais: Sazonalidade, promoções, feriados
     
  Critérios básicos:
-    - Qualidade dos dados (baixa ou nenhuma taxa de valores ausentes)
-    - Granularidade temporal adequada (diária, semanal ou mensal)
-    - Período histórico: 5 anos
+  - Qualidade dos dados (baixa ou nenhuma taxa de valores ausentes)
+  - Granularidade temporal adequada (diária, semanal ou mensal)
+  - Período histórico: 5 anos
     
  Geração dos dados:
     - Para a geração dos dados foi Utilizado uma ferramenta de Inteligência Artificial Generativa: Claude Sonnet 4.5
