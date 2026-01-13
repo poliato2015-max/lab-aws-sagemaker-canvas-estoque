@@ -47,42 +47,41 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 ### 1. Compreensão e Preparação dos Dados
 
 - 1.1 Criação do Dataset
-Variáveis:
+
+  Variáveis:
   - Temporais: Data, mês, ano
   - Produto: SKU, nome do produto = apenas roupas
   - Demanda: Quantidade vendida, preço, unidades em estoque
   - Contextuais: Sazonalidade, promoções, feriados
     
-  Critérios básicos:
-    - Qualidade dos dados (baixa taxa de valores ausentes)
+ Critérios básicos:
+    - Qualidade dos dados (baixa ou nenhuma taxa de valores ausentes)
     - Granularidade temporal adequada (diária, semanal ou mensal)
     - Período histórico: 5 anos
     
-  Geração dos dados:
+ Geração dos dados:
     - Para a geração dos dados foi Utilizado uma ferramenta de Inteligência Artificial Generativa: Claude Sonnet 4.5
     - Características do dataset gerado:
-      - 520.600 registros de vendas reais
-      - 60 produtos diferentes de moda (camisetas, calças, vestidos, jaquetas, etc.)
+      - 102.318 registros de vendas
+      - 40 produtos diferentes de moda (camisetas, calças, vestidos, jaquetas, etc.)
       - Período: 01/01/2021 a 31/12/2025
-      - Aproximadamente 50 produtos vendidos por dia com variação natural
+      - Mínimo de 30 produtos vendidos por dia com variação natural
       - Estoque realista que decresce com as vendas e é reposto quando zerado
-      - Flags de promoção (aproximadamente 25% dos dias que têm promoções)
+      - Flags de promoção ( de 10% a 30%)
       - Formato CSV pronto para uso no SageMaker Canvas
       - Colunas existentes no arquivo gerado:
-        - PRODUTO (ID numérico)
+        - PRODUTO ((ID numérico 1-40)
         - DESCRICAO_PRODUTO (nome do produto)
         - DATA_VENDA (formato YYYY-MM-DD)
-        - PREÇO_DA_VENDA
+        - PREÇO_DA_VENDA (valor com 2 casas decimais)
         - FLAG_PROMOCAO (0 ou 1)
-        - QUANTIDADE_ESTOQUE (estoque após a venda)
-    - Imagem quanto ao prompt na geração do dataset na ferramenta Claude:
+        - QUANTIDADE_ESTOQUE ( após a venda)
+    - Imagem quanto ao prompt executado para a geração do dataset na ferramenta Claude:
       ![image](https://github.com/poliato2015-max/imagens/blob/main/DATASET_HISTORICO_ESTOQUE_CLAUDE_IA.jpg?raw=true)
-
-
-- 1.2 Faça o upload do dataset criado no SageMaker Canvas.
 
 ### 2. Construir/Treinar
 
+- 1.2 Faça o upload do dataset criado no SageMaker Canvas.
 -   No SageMaker Canvas, importe o dataset que você selecionou.
 -   Configure as variáveis de entrada e saída de acordo com os dados.
 -   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
