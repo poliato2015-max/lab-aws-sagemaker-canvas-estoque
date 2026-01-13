@@ -58,8 +58,8 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
   - Qualidade dos dados (baixa ou nenhuma taxa de valores ausentes)
   - Granularidade temporal adequada (diária, semanal ou mensal)
   - Período histórico: 5 anos
-    
- Geração dos dados:
+  
+  Geração dos dados:
     - Para a geração dos dados foi Utilizado uma ferramenta de Inteligência Artificial Generativa: Claude Sonnet 4.5
     - Características do dataset gerado:
       - 102.318 registros de vendas
