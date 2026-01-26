@@ -73,8 +73,6 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
         - DATA_VENDA (formato YYYY-MM-DD)
         - FLAG_PROMOCAO (0 ou 1)
         - QUANTIDADE_ESTOQUE ( após a venda)
-    - Imagem quanto ao prompt executado para a geração do dataset na ferramenta Claude:
-      ![image](https://github.com/poliato2015-max/imagens/blob/main/DATASET_HISTORICO_ESTOQUE_CLAUDE_IA.jpg?raw=true)
 
 ### 2. Construir/Treinar
 
