@@ -50,30 +50,27 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 
   Variáveis:
   - Temporais: Data, mês, ano
-  - Produto: SKU, nome do produto = apenas roupas
-  - Demanda: Quantidade vendida, preço, unidades em estoque
+  - Demanda: Unidades em estoque
   - Contextuais: Sazonalidade, promoções, feriados
   
   Critérios básicos:
   - Qualidade dos dados (baixa ou nenhuma taxa de valores ausentes)
   - Granularidade temporal adequada (diária, semanal ou mensal)
-  - Período histórico: 5 anos
+  - Período histórico: 19 dias
   
   Geração dos dados:
     - Para a geração dos dados foi Utilizado uma ferramenta de Inteligência Artificial Generativa: Claude Sonnet 4.5
     - Características do dataset gerado:
-      - 102.318 registros de vendas
-      - 40 produtos diferentes de moda (camisetas, calças, vestidos, jaquetas, etc.)
-      - Período: 01/01/2021 a 31/12/2025
-      - Mínimo de 30 produtos vendidos por dia com variação natural
+      - 500 registros de vendas
+      - 25 produtos diferentes
+      - Período: 31/12/2024 a 19/01/2025
+      - Mínimo de 20 produtos vendidos por dia com variação natural
       - Estoque realista que decresce com as vendas e é reposto quando zerado
       - Flags de promoção ( de 10% a 30%)
       - Formato CSV pronto para uso no SageMaker Canvas
       - Colunas existentes no arquivo gerado:
-        - PRODUTO ((ID numérico 1-40)
-        - DESCRICAO_PRODUTO (nome do produto)
+        - PRODUTO ((ID numérico 1-25)
         - DATA_VENDA (formato YYYY-MM-DD)
-        - PREÇO_DA_VENDA (valor com 2 casas decimais)
         - FLAG_PROMOCAO (0 ou 1)
         - QUANTIDADE_ESTOQUE ( após a venda)
     - Imagem quanto ao prompt executado para a geração do dataset na ferramenta Claude:
