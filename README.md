@@ -80,9 +80,13 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 
    [![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_upload_dataset_imagem_1.jpg?raw=true)
  
- - Escolha o nome e o tipo do modelo a ser criado. Neste projeto o próprio Sage Maker Canvas sugeriu o modelo de análise preditiva.
+ - Nome e o tipo do modelo escolhido a ser criado. Neste projeto o próprio Sage Maker Canvas sugeriu o modelo de análise preditiva.
 
    [![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_tipo_modelo_imagem_2.jpg?raw=true)
+
+- Configurado a coluna do dataset necessária para que o modelo calcule a previsão de estoque futura. Selecionamos para este projeto a columa "quantidade de estoque" de nosso histórico.
+
+  [![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_colunas_modelo_imagem_3.jpg?raw=true)
 
  -  Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
 
