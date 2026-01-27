@@ -80,7 +80,7 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 
    [![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_upload_dataset_imagem_1.jpg?raw=true)
  
- - Escolha o nome e o tipo do modelo a ser criado. Neste projeto o próprio Sage Maker Canvas sugerio o modelo de análise preditiva.
+ - Escolha o nome e o tipo do modelo a ser criado. Neste projeto o próprio Sage Maker Canvas sugeriu o modelo de análise preditiva.
 
    [![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_tipo_modelo_imagem_2.jpg?raw=true)
 
