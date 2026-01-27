@@ -78,7 +78,7 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 
 -   Faça o upload do dataset criado na ferramenta SageMaker Canvas.
 
-<a href="https://raw.githubusercontent.com/poliato2015-max/imagens/main/projeto_sagemakercanvas_upload_dataset_imagem_1.jpg" target="_blank">
+<a href="https://raw.githubusercontent.com/poliato2015-max/imagens/main/projeto_sagemakercanvas_upload_dataset_imagem_1.jpg">
   <img src="https://raw.githubusercontent.com/poliato2015-max/imagens/main/projeto_sagemakercanvas_upload_dataset_imagem_1.jpg" alt="Upload do Dataset" width="600">
 </a>
  
