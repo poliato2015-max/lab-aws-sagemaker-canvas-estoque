@@ -65,7 +65,7 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
       - 25 produtos diferentes
       - Período: 31/12/2024 a 19/01/2025
       - Mínimo de 20 produtos vendidos por dia com variação natural
-      - Estoque realista que decresce com as vendas e é reposto quando zerado
+      - Estoque realista que decresce com as vendas
       - Flags de promoção ( de 10% a 30%)
       - Formato CSV pronto para uso no SageMaker Canvas
       - Colunas existentes no arquivo gerado:
@@ -76,8 +76,8 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 
 ### 2. Construir/Treinar
 
-- 1.2 Faça o upload do dataset criado no SageMaker Canvas.
--   No SageMaker Canvas, importe o dataset que você selecionou.
+-   Faça o upload do dataset criado na ferramenta SageMaker Canvas.
+-   
 -   Configure as variáveis de entrada e saída de acordo com os dados.
 -   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
 
