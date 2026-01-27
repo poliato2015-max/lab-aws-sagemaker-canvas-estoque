@@ -78,11 +78,11 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 
 -  2.1 Faça o upload do dataset criado pela Inteligência Artificial Generativa na ferramenta SageMaker Canvas.
 
-  [![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_upload_dataset_imagem_1.jpg?raw=true)
+   [![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_upload_dataset_imagem_1.jpg?raw=true)
  
--  2.2 Configure as variáveis de entrada e saída de acordo com os dados.
--  Escolha o nome e o tipo do modelo a ser criado. Neste projeto o próprio Sage Maker Canvas sugerio o modelo de análise preditiva.
-[![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_tipo_modelo_imagem_2.jpg?raw=true)
+ - 2.2 Configure as variáveis de entrada e saída de acordo com os dados.
+   Escolha o nome e o tipo do modelo a ser criado. Neste projeto o próprio Sage Maker Canvas sugerio o modelo de análise preditiva.
+   [![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_tipo_modelo_imagem_2.jpg?raw=true)
 
 -  
 -   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
