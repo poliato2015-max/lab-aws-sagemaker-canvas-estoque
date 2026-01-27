@@ -78,6 +78,10 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 
 -   Faça o upload do dataset criado na ferramenta SageMaker Canvas.
 -   ![image](https://github.com/poliato2015-max/imagens/blob/6a8c08e59086be8cab781b4fc44c0d4e89a5cac5/projeto_sagemakercanvas_upload_dataset_imagem_1.jpg)
+
+-   ![image](https://raw.githubusercontent.com/poliato2015-max/imagens/blob/6a8c08e59086be8cab781b4fc44c0d4e89a5cac5/projeto_sagemakercanvas_upload_dataset_imagem_1.jpg)
+ 
+
 -   Configure as variáveis de entrada e saída de acordo com os dados.
 -   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
 
