@@ -118,12 +118,12 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 
 -  Após SageMaker Canvas encerrar o treinamento do modelo, iremos avaliar as métricas de performance.
 
-
+-   <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_analisar_modelo_imagem_5.jpg?raw=true" width="800" height="400">
 
 -    Utilizamos a inteligência artificial para nos ajudar a entender o significado das métricas retornadas após o treinamento do treinamento:
 
   
--   <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_analisar_modelo_imagem_5.jpg?raw=true" width="800" height="400">
+
 
 -   Verifique as principais características que influenciam as previsões.
 -   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
