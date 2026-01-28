@@ -78,12 +78,12 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 
 -  Faça o upload do dataset criado pela Inteligência Artificial Generativa na ferramenta SageMaker Canvas.
 
-   [![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_upload_dataset_imagem_1.jpg?raw=true)
+   ![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_upload_dataset_imagem_1.jpg?raw=true)
  
  - Nome e o tipo do modelo escolhido a ser criado.
    - Neste projeto o próprio Sage Maker Canvas sugeriu o modelo de análise preditiva.
 
-   [![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_tipo_modelo_imagem_2.jpg?raw=true)
+  ![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_tipo_modelo_imagem_2.jpg?raw=true)
 
 - Configurado a coluna do dataset necessária para que o modelo calcule a previsão de estoque futura. Selecionamos para este projeto a coluna "quantidade de estoque" de nosso histórico.
 
