@@ -108,10 +108,12 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
     
     <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_config_modelo_imagem_3.2.jpg?raw=true" width="800" height="400">
   
- -  Após configurar os parâmetros do modelo, necessário iniciarmos o treinamento para construção do modelo.
- -    Escolhemos a opção mais demorada porém mais acertiva ( Standad Build )
- -    A ferramenta informa que para este modelo o prazo estimado é de +- 2 horas
-
+ - Treinamento do modelo
+   - Após configurar os parâmetros necessários, necessário iniciarmos o treinamento para construção do modelo
+   - Escolhemos a opção mais demorada porém mais acertiva ( Standad Build ) com prazo estimado em +- 2 horas para a conclisão do treinamento
+   
+   <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_treinar_modelo_imagem_4.jpg?raw=true" width="800" height="400">
+   
 ### 3. Analisar
 
 -   Após o treinamento, examine as métricas de performance do modelo.
