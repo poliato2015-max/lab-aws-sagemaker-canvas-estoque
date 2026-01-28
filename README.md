@@ -110,26 +110,28 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
   
  - Treinamento do modelo
    - Após configurar os parâmetros necessários, necessário iniciarmos o treinamento para construção do modelo
-   - Escolhemos a opção mais demorada porém mais acertiva ( Standad Build ) com prazo estimado em +- 2 horas para a conclisão do treinamento
+   - Escolhemos a opção de modelo mais rápida ( Quick build ) com prazo estimado em +- 20 minutos para conclusão
    
    <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_treinar_modelo_imagem_4.jpg?raw=true" width="800" height="400">
    
 ### 3. Analisar
 
--  Após SageMaker Canvas encerrar o treinamento do modelo, iremos avaliar as métricas de performance.
+-  Após o SageMaker Canvas concluir o treinamento do modelo, foram geradas métricas com status do modelo e as colunas de dados do dataset que geraram impactos na previsão.
 
--   <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_analisar_modelo_imagem_5.jpg?raw=true" width="800" height="400">
+   <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_analisar_modelo_imagem_5.jpg?raw=true" width="800" height="400">
 
--    Utilizamos a inteligência artificial para nos ajudar a entender o significado das métricas retornadas após o treinamento do treinamento:
+-  Utilizamos inteligência artificial para apoiar na interpretação das métricas de status e avaliar se seus valores estão dentro dos critérios de aceitação do modelo
+    -  Abaixo tabela para referência com as mêtricas de status:
+    <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_tabela_metricas_modelo_imagem_6.jpg?raw=true" width="800" height="400">
 
-  
-
-
--   Verifique as principais características que influenciam as previsões.
--   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
+-   O modelo treinado está aceitável pelas métricas de status e colunas de impactos:
+    -   Apenas a métrica RMSE ficou um pouco acima do sugerido pelo SageMaker Canvas, restante das mètricas estão dentro dos valores sugeridos
+    -   A coluna FLAG_PROMOÇÃO não gerou impacto no modelo treinado e a Flag feríado no Brasil gerou baixo impacto no modelo     
 
 ### 4. Prever
 
--   Use o modelo treinado para fazer previsões de estoque.
+-   Chegamos na última etapa do projeto que é rodar o modelo criado para prever o volume de estoque para um dia.
+    -   Iremos utilizar o mesmo dataset que já havíamos importados e escolher o tipo de previsão "Batch prediction", assim rodamos o modelo de previsão para dos os produtos de uma única vez e exportamos o resultado
+
 -   Exporte os resultados e analise as previsões geradas.
 -   Documente suas conclusões e qualquer insight obtido a partir das previsões.
