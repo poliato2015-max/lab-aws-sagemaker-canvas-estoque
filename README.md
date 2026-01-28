@@ -102,8 +102,10 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 
     <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_config_modelo_imagem_3.1.jpg?raw=true" width="800" height="400">
    
-- Configurado a coluna do dataset necessária para que o modelo calcule a previsão de estoque futura.
-  - Selecionamos para este projeto a coluna "quantidade de estoque" de nosso histórico.
+    - Definimos a coluna do dataset que representa a variável alvo (target), permitindo que o modelo identifique corretamente o dado a ser previsto.
+    -   Neste projeto, a variável selecionada foi “quantidade de estoque”, extraída do histórico de dados.
+
+ <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_config_modelo_imagem_3.1.jpg?raw=true" width="800" height="400">
   
  -  Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
 
