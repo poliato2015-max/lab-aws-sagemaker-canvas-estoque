@@ -90,11 +90,22 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 
    <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_tipo_modelo_imagem_2.jpg?raw=true" width="800" height="400">
 
+  - Configurando o modelo de séries temporais:
+    - ID column = A coluna do nosso dataset que representa valores uúnicos/independentes é a ID_PRODUTO
+    - Time stamp Colunn = A coluna do nosso dataset que conta ordem temporaral de daodos é a DATA_VENDA
+    - Days = Definimos 1 dia como o período futuro que o modelo deve prever
+    - Habilitamos para que o modelo utilize feriados no Brasil como variável explicativa
+    
+    <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_config_modelo_imagem_3.jpg?raw=true" width="800" height="400">
+    
+    - Para a configuração tipo de modelo, a própria ferramenta escolheu automaticamente série temporal
+
 - Configurado a coluna do dataset necessária para que o modelo calcule a previsão de estoque futura.
   - Selecionamos para este projeto a coluna "quantidade de estoque" de nosso histórico.
 
-  <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_upload_dataset_imagem_1.jpg?raw=true" width="800" height="400">
 
+
+  
  -  Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
 
 ### 3. Analisar
