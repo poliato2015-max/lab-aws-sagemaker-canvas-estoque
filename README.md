@@ -131,7 +131,10 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 ### 4. Prever
 
 -   Chegamos na última etapa do projeto que é rodar o modelo criado para prever o volume de estoque para um dia.
-    -   Iremos utilizar o mesmo dataset que já havíamos importados e escolher o tipo de previsão "Batch prediction", assim rodamos o modelo de previsão para dos os produtos de uma única vez e exportamos o resultado
+    -   Iremos utilizar o mesmo dataset que já havíamos importados anteriormete e escolher o processamento de previsão como "Batch prediction", assim rodamos o modelo para todos os produtos de uma única vez e exportamos o resultado
+      
+    <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_previsao_estoque_imagem_7.jpg?raw=true" width="800" height="400">
 
--   Exporte os resultados e analise as previsões geradas.
+-   Ao término do processamento do modelo, exportamos o resultado de todos os produtos e iremos avaliar as métricas que representam os percentis de previsão, oferecendo diferentes cenários de demanda  
+  
 -   Documente suas conclusões e qualquer insight obtido a partir das previsões.
