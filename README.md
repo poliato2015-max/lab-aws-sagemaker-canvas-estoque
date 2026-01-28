@@ -46,7 +46,7 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 
 ### 1. Compreensão e Preparação dos Dados
 
-- 1.1 Criação do Dataset
+- Criação do Dataset
 
   Variáveis:
   - Temporais: Data, mês, ano
@@ -65,7 +65,7 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
       - 25 produtos diferentes
       - Período: 31/12/2024 a 19/01/2025
       - Mínimo de 20 produtos vendidos por dia com variação natural
-      - Estoque realista que decresce com as vendas
+      - Estoque realista que decresce com as vendas e podendo chegar a zero
       - Flags de promoção ( de 10% a 30%)
       - Formato CSV pronto para uso no SageMaker Canvas
       - Colunas existentes no arquivo gerado:
@@ -80,7 +80,8 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
 
    [![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_upload_dataset_imagem_1.jpg?raw=true)
  
- - Nome e o tipo do modelo escolhido a ser criado. Neste projeto o próprio Sage Maker Canvas sugeriu o modelo de análise preditiva.
+ - Nome e o tipo do modelo escolhido a ser criado.
+   - Neste projeto o próprio Sage Maker Canvas sugeriu o modelo de análise preditiva.
 
    [![Imagem](https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_tipo_modelo_imagem_2.jpg?raw=true)
 
