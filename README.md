@@ -103,11 +103,14 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
     <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_config_modelo_imagem_3.1.jpg?raw=true" width="800" height="400">
    
     - Definimos a coluna do dataset que representa a variável alvo (target), permitindo que o modelo identifique corretamente o dado a ser previsto.
-    -   Neste projeto, a variável selecionada foi “quantidade de estoque”, extraída do histórico de dados.
-
- <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_config_modelo_imagem_3.1.jpg?raw=true" width="800" height="400">
+      -   Neste projeto, a variável selecionada foi “quantidade de estoque”, extraída do histórico de dados
+      -   Observe que os valores das colunas e quantidade de registros do dataset importado estão corretos
+    
+    <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_config_modelo_imagem_3.2.jpg?raw=true" width="800" height="400">
   
- -  Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
+ -  Após configurar os parâmetros do modelo, necessário iniciarmos o treinamento para construção do modelo.
+ -    Escolhemos a opção mais demorada porém mais acertiva ( Standad Build )
+ -    A ferramenta informa que para este modelo o prazo estimado é de +- 2 horas
 
 ### 3. Analisar
 
