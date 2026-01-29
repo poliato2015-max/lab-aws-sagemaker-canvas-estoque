@@ -136,7 +136,10 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
     <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_previsao_estoque_imagem_7.jpg?raw=true" width="800" height="400">
 
     -   Ao término do processamento pelo modelo treinado, exportamos o resultado de todos os produtos para avaliarmos as métricas que representam os percentis para previsão de demanda futura ( 1 dia )
+      
     -   Utilizamos inteligência artificial para apoiar na explicação sobre essas métricas de percentis:
+     <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_explicacao_metrica_p_imagem_8.jpg?raw=true" width="800" height="400">
+
 
 
   
