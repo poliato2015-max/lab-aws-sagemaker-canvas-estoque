@@ -53,11 +53,6 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
   - Demanda: Unidades em estoque
   - Contextuais: Sazonalidade, promoções, feriados
   
-  Critérios básicos:
-  - Qualidade dos dados (baixa ou nenhuma taxa de valores ausentes)
-  - Granularidade temporal adequada (diária, semanal ou mensal)
-  - Período histórico: 19 dias
-  
   Geração dos dados:
     - Para a geração dos dados foi Utilizado uma ferramenta de Inteligência Artificial Generativa: Claude Sonnet 4.5
     - Características do dataset gerado:
@@ -72,7 +67,7 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
         - PRODUTO ((ID numérico 1-25)
         - DATA_VENDA (formato YYYY-MM-DD)
         - FLAG_PROMOCAO (0 ou 1)
-        - QUANTIDADE_ESTOQUE ( após a venda)
+        - QUANTIDADE_ESTOQUE ( após a venda, podendo chegar a zero )
 
 ### 2. Construir/Treinar
 
@@ -86,58 +81,63 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
      <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_visualizar_dataset_imagem_1.1.jpg?raw=true" width="800" height="400">
  
  - Nome e o tipo do modelo escolhido a ser criado.
-   - Neste projeto o próprio Sage Maker Canvas sugeriu o modelo de análise preditiva.
+   - Neste projeto, o próprio SageMaker Canvas sugeriu automaticamente o modelo de análise preditiva mais adequado.
 
    <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_tipo_modelo_imagem_2.jpg?raw=true" width="800" height="400">
 
   - Configurando o modelo de séries temporais:
     - ID column = A coluna do nosso dataset que representa valores uúnicos/independentes é a ID_PRODUTO
     - Time stamp Colunn = A coluna do nosso dataset que conta ordem temporaral de daodos é a DATA_VENDA
-    - Days = Definimos 1 dia como o período futuro que o modelo deve prever
-    - Habilitamos para que o modelo utilize feriados no Brasil como variável explicativa
+    - Days = Período futuro de previsão: 1 dia
+    - Habilitamos o uso de feriados do Brasil como variável explicativa
     
     <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_config_modelo_imagem_3.jpg?raw=true" width="800" height="400">
         
-    - Para a configuração do tipo modelo, a própria ferramenta escolheu automaticamente a série temporal
+    - Para a configuração do tipo modelo, a própria ferramenta escolheu automaticamente a série temporal.
 
     <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_config_modelo_imagem_3.1.jpg?raw=true" width="800" height="400">
    
-    - Definimos a coluna do dataset que representa a variável alvo (target), permitindo que o modelo identifique corretamente o dado a ser previsto.
-      -   Neste projeto, a variável selecionada foi “quantidade de estoque”, extraída do histórico de dados
-      -   Observe que os valores das colunas e quantidade de registros do dataset importado estão corretos
+    - Definimos a coluna do dataset que representa a variável alvo (target), permitindo que o modelo identifique corretamente o dado a ser previsto:
+      -   Variável selecionada: "QUANTIDADE_ESTOQUE", extraída do histórico de dados de estoque
+      -   Validação realizada: os valores das colunas e a quantidade de registros do dataset importado estão corretos
     
     <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_config_modelo_imagem_3.2.jpg?raw=true" width="800" height="400">
   
- - Treinamento do modelo
-   - Após configurar os parâmetros necessários, necessário iniciarmos o treinamento para construção do modelo
-   - Escolhemos a opção de modelo mais rápida ( Quick build ) com prazo estimado em +- 20 minutos para conclusão
+ - Treinamento do modelo:
+   - Com os parâmetros configurados, procedemos ao treinamento
+   - Método escolhido: Quick build - ideal para validação rápida do modelo
+   - Duração estimada: ~20 minutos
    
    <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_treinar_modelo_imagem_4.jpg?raw=true" width="800" height="400">
    
 ### 3. Analisar
 
--  Após o SageMaker Canvas concluir o treinamento do modelo, foram geradas métricas com status do modelo e as colunas de dados do dataset que geraram impactos na previsão.
+-  Após a conclusão do treinamento, o SageMaker Canvas gerou métricas de desempenho do modelo e identificou as colunas do dataset que tiveram maior impacto nas previsões.
 
    <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_analisar_modelo_imagem_5.jpg?raw=true" width="800" height="400">
 
--  Utilizamos inteligência artificial para apoiar na interpretação das métricas de status e avaliar se seus valores estão dentro dos critérios de aceitação do modelo
+-  Para facilitar a análise, utilizamos inteligência artificial na interpretação das descrições das métricas obtidas, avaliando se seus valores indicam qualidade adequada conforme os critérios de aceitação do modelo.
     -  Abaixo tabela para referência com as mêtricas de status:
     <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_tabela_metricas_modelo_imagem_6.jpg?raw=true" width="800" height="400">
 
--   O modelo treinado está aceitável pelas métricas de status e colunas de impactos:
-    -   Apenas a métrica RMSE ficou um pouco acima do sugerido pelo SageMaker Canvas, restante das mètricas estão dentro dos valores sugeridos
-    -   A coluna FLAG_PROMOÇÃO não gerou impacto no modelo treinado e a Flag feríado no Brasil gerou baixo impacto no modelo     
+-   O modelo treinado foi considerado aceitável com base nas métricas de desempenho e análise de importância das variáveis:
+    -   Métrica RMSE: ligeiramente acima do valor sugerido pelo SageMaker Canvas
+    -   Demais métricas: dentro dos valores recomendados
+    -   FLAG_PROMOÇÃO: não apresentou impacto significativo no modelo
+    -   FLAG_FERIADO_BRASIL: apresentou baixo impacto nas previsões    
 
 ### 4. Prever
 
--   Chegamos na última etapa do projeto que é rodar o modelo criado para prever o volume de estoque para um dia.
-    -   Iremos utilizar o mesmo dataset que já havíamos importados anteriormete e escolher o processamento de previsão como "Batch prediction", assim rodamos o modelo para todos os produtos de uma única vez e exportamos o resultado
+-   Chegamos à etapa final do projeto: executar o modelo para prever o volume de estoque para o próximo dia:
+    -   Utilizamos o mesmo dataset importado anteriormente
+    -   Tipo de previsão: Batch prediction (previsão em lote)
+    -   Vantagem: permite processar todos os produtos simultaneamente e exportar os resultados de uma única vez
       
     <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_previsao_estoque_imagem_7.jpg?raw=true" width="800" height="400">
 
-    -   Ao término do processamento pelo modelo treinado, exportamos o resultado de todos os produtos para avaliarmos as métricas que representam os percentis para previsão de demanda futura ( 1 dia )
+    -   Ao concluir o processamento, exportamos os resultados de todos os produtos para análise das métricas de percentis (P10, P50, P90) que representam as previsões de demanda para o próximo dia.
       
-    -   Utilizamos inteligência artificial para apoiar na explicação sobre essas métricas de percentis:
+    -   Para facilitar o entendimento, utilizamos inteligência artificial na explicação das métricas de percentis:
      <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_explicacao_metrica_p_imagem_8.jpg?raw=true" width="800" height="400">
 
 -   Resultado e parecer do modelo de previsão.
@@ -147,3 +147,21 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
      
     -  Para os demais produtos, o histórico de estoque do nosso dataset indica ausência de reposição nos últimos dias. Consequentemente, as previsões de P10, P50 e P90 resultaram em valores zerados ou negativos.
      <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_resultado_grafico_2_imagem_10.jpg?raw=true" width="800" height="1200">
+
+     
+-   Conclusão.
+    -   Alcance dos Objetivos:
+        -   O projeto atingiu seu objetivo principal de demonstrar a aplicação prática de Machine Learning no-code para previsão de estoque. O SageMaker Canvas provou ser uma ferramenta acessível e eficiente para criar modelos preditivos sem necessidade de programação extensiva.
+    -   Aprendizados Técnicos:
+        -   Compreensão do fluxo completo de um projeto de ML: preparação de dados, treinamento, análise e previsão
+        -   Experiência prática com AutoML e seleção automática de algoritmos
+        -   Interpretação de métricas de séries temporais (RMSE, WAPE)
+        -   Análise de importância de features e sua influência no modelo
+        -   Entendimento de previsões probabilísticas através de percentis
+     -   Insights de Negócio:
+        -   Os produtos com previsões negativas/zeradas sinalizam necessidade urgente de reabastecimento ou de descontinuidade. A ausência de reposição nos últimos dias criou um padrão crítico que o modelo identificou.
+        -   Os 5 produtos com previsões positivas demonstram gestão eficiente de inventário com reposições tempestivas. Este padrão pode ser replicado para os demais produtos.
+ -   Considerações Finais:
+        -   Este projeto representa uma excelente introdução ao mundo de Machine Learning aplicado à gestão de operações.
+        -   O uso de SageMaker Canvas democratiza o acesso a técnicas avançadas de previsão, permitindo que profissionais de diferentes áreas apliquem ML em seus contextos sem barreiras técnicas significativas.
+
