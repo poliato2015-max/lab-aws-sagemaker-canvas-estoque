@@ -140,7 +140,5 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
     -   Utilizamos inteligência artificial para apoiar na explicação sobre essas métricas de percentis:
      <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_explicacao_metrica_p_imagem_8.jpg?raw=true" width="800" height="400">
 
-
-
-  
--   Documente suas conclusões e qualquer insight obtido a partir das previsões.
+-   Resultado e parecer do modelo de previsão.
+-   Para os produtos 01, 05, 15, 16 e 21 o histórico de estoque do nosso dataset sempre foi reposto antes de chegasse a zera e com isto as previsões de P10, P50 e P90 ficarm positivas.
