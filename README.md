@@ -12,7 +12,7 @@ Requisitos Técnicos:
 
 Recursos Necessários:
 
-- Dataset histórico de vendas/estoque (disponível na pasta datasets/)
+- Um Dataset histórico de vendas/estoque
 - Navegador web atualizado
 - Conexão estável com a internet
 
