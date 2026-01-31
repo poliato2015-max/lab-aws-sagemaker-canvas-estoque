@@ -141,4 +141,7 @@ Utilizamos algoritmos de séries temporais e regressão para modelar padrões hi
      <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_explicacao_metrica_p_imagem_8.jpg?raw=true" width="800" height="400">
 
 -   Resultado e parecer do modelo de previsão.
--   Para os produtos 01, 05, 15, 16 e 21 o histórico de estoque do nosso dataset sempre foi reposto antes de chegasse a zera e com isto as previsões de P10, P50 e P90 ficarm positivas.
+    -   Para os produtos 01, 05, 15, 16 e 21 o histórico de estoque do nosso dataset sempre foi reposto antes de chegasse a zera e com isto as previsões de P10, P50 e P90 ficarm positivas.
+      
+    -   Para o restante dos produtos o histórico de estoque do nosso dataset ficou sem reposição nos últimos dias e com isto as previsões de P10, P50 e P90 ficarm zeradas ou negativas.
+     <img src="https://github.com/poliato2015-max/imagens/blob/main/projeto_sagemakercanvas_resultado_grafico_2_imagem_10.jpg?raw=true" width="800" height="1200">
